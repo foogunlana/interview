@@ -31,9 +31,7 @@ The aim of this assessment is not to complete the tasks, though completing the t
 #### Conduct
 By submitting, you assure us that you have not shared the test with anyone else and that all work submitted is your own. Though you are allowed to use whatever online or offline resources you see fit to learn skills for the tasks.
 
-
-### <a name="coding-homework"></a>
-### **Coding Homework**
+## **Coding Homework**
 
 The coding homework is broken down into tasks to help you step through it in chunks.
 We advise you skim through all tasks before starting. Remember that completing all parts of a task is not as important as doing what you can in the best way you can.
@@ -71,8 +69,7 @@ Next, write a command line tool or command that adds a new user to the user data
 Finally, add one more forms to the application search page. One for commodities, in which the user could enter a commodity name and a price in Naira - e.g. "oil" and "50.3". Now your search bar should search for both the articles and the commodities, and it should present results in the same list in order of relevance.
 
 
-### <a name="technical-questions"></a>
-### **Technical Questions**
+## **Technical Questions**
 
 - What part of your existing codebase needs the most improvement and how would you improve it if you had time.
 - How would you divide the tasks above amongst multiple developers collaborating through Git? How many developers do you think would be necessary?
