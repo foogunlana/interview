@@ -1,5 +1,3 @@
-Table of contents
------------------
 [TOC]
 
 Interview for Web Developer June 18
