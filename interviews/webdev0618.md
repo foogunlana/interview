@@ -28,18 +28,20 @@ Also we will give extra points to:
 * **Architecture** - Use best practices in design and create simple readable code
 
 ###### NOTE
-The aim of this assessment is not to complete the tasks, though completing the tasks is encouraged. The aim is to demonstrate your skills in good software an UX architecture, learning, and creating maintainable and portable code. We will favour well thought out incomplete tasks to completed tasks made with spaghetti code.
+The aim of this assessment is **not** to complete the tasks, though completing the tasks is encouraged. The aim is to demonstrate your skills in good software an UX architecture, learning, and creating maintainable and portable code. We will favour well thought out incomplete tasks to completed tasks made with spaghetti code.
 
 #### Conduct
 By submitting, you assure us that you have not shared the test with anyone else and that all work submitted is your own. Though you are allowed to use whatever online or offline resources you see fit to learn skills for the tasks.
 
 ## **Coding Homework**
 
-The coding homework is broken down into tasks to help you step through it in chunks.
+The coding homework is broken down into tasks to help you step through it in chunks. You must complete task 1, and either of task 2 or 3.
 We advise you skim through all tasks before starting. Remember that completing all parts of a task is not as important as doing what you can in the best way you can.
 
 #### **Platforms**
 JavaScript, Python, PHP, Ruby and other scripting languages are preferred, but feel free to use anything that get's the job done. If you feel your tools are particularly obscure, please send an email to foluso_ogunlana@stearsng.com to find out if it's okay to use them.
+
+**Please complete task 1 and either task 2, or task 3**
 
 #### Task 1
 
@@ -66,12 +68,12 @@ Finally create a README.md or other documentation form explaining how to build, 
 
 First, containerise your application so it is easy to build, test, deploy and scale (if necessary) with few commands and in any host or environment.
 
-Next, write a command line tool or command that adds a new user to the user database from outside of the container.
-
-Finally, add one more forms to the application search page. One for commodities, in which the user could enter a commodity name and a price in Naira - e.g. "oil" and "50.3". Now your search bar should search for both the articles and the commodities, and it should present results in the same list in order of relevance.
+Finally, add one more form to the application search page. One for commodities, in which the user could input a commodity name and a price in Naira to the database - e.g. "oil" and "50.3". Now your search bar should search for both the articles and the commodities, and it should present results in the same list in order of relevance.
 
 
 ## **Technical Questions**
+
+Please keep your answers brief. Maximum of a couple of paragraphs.
 
 - What part of your existing codebase needs the most improvement and how would you improve it if you had time.
 - How would you divide the tasks above amongst multiple developers collaborating through Git? How many developers do you think would be necessary?
