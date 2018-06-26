@@ -1,13 +1,11 @@
-[TOC]
-
 Interview for Web Developer June 18
 ===================================
 
 Thanks for your application to Stears.
 The interview will consist of 2 parts:
 
-* Coding homework
-* Technical questions
+* [Coding homework](#coding-homework)
+* [Technical questions](#technical-questions)
 
 This interview is intended for a developer who is primarily skilled in front-end development, but has sufficient knowledge of back-end development tools.
 
