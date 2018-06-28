@@ -10,7 +10,7 @@ The interview will consist of 2 parts:
 This interview is intended for a developer who is primarily skilled in front-end development, but has sufficient knowledge of back-end development tools.
 
 #### Submissions
-Please create a private [bitbucket](https://bitbucket.org/) repository and add foluso_ogunlana@stearsng.com as a contributor.
+Please create a private [bitbucket](https://bitbucket.org/) repository and add foluso_ogunlana and oluwoleco as a contributor.
 
 #### Deadlines
 You will be given at least 2 days to complete the tasks below. You may also bring the task to your in-person interview to be completed there (you will be given time to do so).
