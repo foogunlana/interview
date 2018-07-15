@@ -40,12 +40,10 @@ The coding homework is broken down into tasks to help you step through it in chu
 We advise you to skim through all tasks before starting.
 
 #### **Platforms**
-JavaScript, Python, PHP, Ruby and other scripting languages are preferred, but feel free to use anything that get's the job done. If you feel your tools are particularly obscure, please send an email to foluso_ogunlana@stearsng.com to find out if it's okay to use them. We might not have any experience using your chosen stack so be sure to create clear instructions in the README and verify they actually work!
+JavaScript, Python, PHP, Ruby and other scripting languages are preferred, but feel free to use anything that get's the job done. If you feel your tools are particularly obscure, please send an email to foluso_ogunlana@stearsng.com to find out if it's okay to use them. We might not have any experience using your chosen stack so be sure to create clear instructions in the README and verify they actually work! It should also explain how to build, deploy and maintain the application - for instance what frameworks are used and how to test the API is working properly.
 
 
 **Please complete task 1 and either task 2, or task 3**
-
-After completing the tasks create a README.md or other documentation form explaining how to build, test, deploy or scale your application. It should also explain how to maintain the application - for instance what frameworks are used and how to test the API is working properly.
 
 #### Task 1
 
