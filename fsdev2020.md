@@ -82,6 +82,7 @@ Django application to create posts. Below is an example post:
 **Hints**
 
 - Use [Django REST Framework](https://www.django-rest-framework.org/)
+- Search GitLab's docs for example .gitlab-ci.yml configs
 
 ### Task 2
 
@@ -102,18 +103,30 @@ As a user, I should be able to land on the home page of your application, enter 
 - Use 2 separate routes: / for home page and /search for search results
 - Achieve no less than 90% unit test coverage
 - Provide a `.gitlab-ci.yml` to run the tests and build the container on the [pipeline](https://docs.gitlab.com/ee/ci/yaml/) using [shared runners](https://docs.gitlab.com/ee/ci/runners/)
-- Be able to run tests, migrations & the dev server with a simple command - hint: `npm run`
+- Be able to run tests, migrations & the dev server with a simple command - hint: `npm run ...`
 
 ![Example table](/../master/search.png?raw=true "Wireframes")
 
 **Note**
 
 - We expect that your code uses best practices in testing, linting, documentation and ReactJS & Django architecture
-- Serve both application and frontend applications using `nginx`
+- Serve both back end and frontend applications using `nginx` or other
 - Containerize each application using docker so it can be run using `docker-compose up`
 - Write a `README.md` file on each repo explaining clearly how to set up **and deploy** the application in development (docker compose) to any environment (Digital Ocean, AWS, or any other server) so it can be seen over a regular browser and HTTP.
+
+### BONUS Task 3
+
+Any attempt at this task is welcome.
+
+1. Hook up an elastic search container and find a way to keep it in sync with your django database, so that every post is instantly indexed as it is created and re-indexed when modified.
+
+2. Expose the search endpoint of this container and all endpoints of the two others using an api-gateway pattern with any favourite tech, e.g. nginx.
+
+3. Use elastic search from the frontend instead of query the django application directly.
+
+4. Write a single E2E test that checks when an item is searched on the UI, results are returned.
 
 ## Thanks!
 
 If you made it this far, thanks for your time.
-We look forward to reviewing your application with you!
+We look forward to reviewing your solid application with you!
