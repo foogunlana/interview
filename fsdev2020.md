@@ -77,7 +77,7 @@ Django application to create posts. Below is an example post:
 
 - No less than 90% test coverage on api endpoints
 - Provide a `.gitlab-ci.yml` to run the tests and build the container on the [pipeline](https://docs.gitlab.com/ee/ci/yaml/) using [shared runners](https://docs.gitlab.com/ee/ci/runners/)
-- Be able to run tests, migrations & the dev server with a simple command - hint: `pipenv run` using [Pipenv](https://pipenv.readthedocs.io/en/latest/)
+- Be able to run tests, migrations & the dev server, each with a simple command - hint: `pipenv run` using [Pipenv](https://pipenv.readthedocs.io/en/latest/)
 
 **Hints**
 
@@ -103,7 +103,7 @@ As a user, I should be able to land on the home page of your application, enter 
 - Use 2 separate routes: / for home page and /search for search results
 - Achieve no less than 90% unit test coverage
 - Provide a `.gitlab-ci.yml` to run the tests and build the container on the [pipeline](https://docs.gitlab.com/ee/ci/yaml/) using [shared runners](https://docs.gitlab.com/ee/ci/runners/)
-- Be able to run tests, migrations & the dev server with a simple command - hint: `npm run ...`
+- Be able to run tests, migrations & the dev server, each with a simple command - hint: `npm run ...`
 
 ![Example table](/../master/search.png?raw=true "Wireframes")
 
