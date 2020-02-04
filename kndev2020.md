@@ -52,7 +52,7 @@ Build an API with the following interface:
 |  GET   |      /reports?       |             -             |
 
 GET /reports lets you filter reports by type, company or year.
-There is a **One to many** relationship between the companies and reports, respectively.
+There is a **One To Many** relationship between the companies and reports, respectively.
 
 You get to decide what the response body to each call should be, and what kind of request validation is necessary. Also note that the JSON files provided are only examples. You can modify the structure as you see fit, but don't stray too far out.
 
@@ -75,11 +75,11 @@ You get to decide what the response body to each call should be, and what kind o
 
 ## Task 2
 
-This is a task to test your Front-End architecture skills, knowledge of moder ReactJS & Typescript patterns, and understanding of good UI & UX
+This is a task to test your Front-End architecture skills, knowledge of modern ReactJS & Typescript patterns, and understanding of good UI & UX
 
 Create a ReactJS application that has 2 pages. 1 for browsing through companies and the other for drilling down into a specific company to see specific information. Here is a rough wireframe:
 
-![Wireframes](./wireframe.png?raw=true "Wireframes")
+![Wireframes](./company-report.png?raw=true "Wireframes")
 
 Here are 2 user stories to help with creating these pages.
 
