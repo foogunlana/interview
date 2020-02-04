@@ -111,7 +111,11 @@ As a user I should be able to see company details and a list of reports. The bas
 
 ## [Bonus] Task 3
 
+This task requires you to modify both the backend and frontend of your application.
+
 Add a search bar to the home page that allows me to perform full text search on the companies and reports.
+
+Searches should go to the backend with an endpoint /search?
 
 The user experience is up to you to figure out, but here are some acceptance criteria to guide you:
 
