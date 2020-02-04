@@ -89,9 +89,9 @@ As a user I should be able to view a list of companies currently available in th
 
 **Acceptance Criteria**
 
-- Be able to see company card for each card available with the name in bold
-- Be able to see a list of company data: description, address, email, and number of reports
-- Be able to click company to take you to it's company detail page (not yet implemented)
+- Be able to see company cards for at least 3 companies with the name in bold
+- Be able to see the following company data in each card: description, address, email, and number of reports
+- Be able to click a company card to take you to it’s company page (implemented in the next user story)
 
 #### User Story 2 - User can see individual company and list of reports
 
