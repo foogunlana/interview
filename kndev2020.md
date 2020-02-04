@@ -1,4 +1,4 @@
-# Stears Design Homework
+# Stears Coding Homework
 
 Thanks for your application to Stears
 
