@@ -44,12 +44,12 @@ This is a purely backend task to assess your API building ability
 
 Build an API with the following interface:
 
-| Method |       Endpoint       |      Request Payload      |
-| :----: | :------------------: | :-----------------------: |
-|  POST  |      /companies      | [company](./company.json) |
-|  GET   | /company/<companyId> |             -             |
-|  POST  |       /reports       |  [report](./report.json)  |
-|  GET   |      /reports?       |             -             |
+| Method |      Endpoint       |      Request Payload      |
+| :----: | :-----------------: | :-----------------------: |
+|  POST  |     /companies      | [company](./company.json) |
+|  GET   | /company/:companyId |             -             |
+|  POST  |      /reports       |  [report](./report.json)  |
+|  GET   |      /reports?      |             -             |
 
 GET /reports lets you filter reports by type, company or year.
 There is a **One To Many** relationship between the companies and reports, respectively.
@@ -63,7 +63,7 @@ You get to decide what the response body to each call should be, and what kind o
 #### Acceptance Criteria
 
 - Be able to create a new company with POST /companies
-- Be able to get a single company with /companies/<companyId>
+- Be able to get a single company with /companies/:companyId
 - Be able to create a new report with POST /reports
 - Be able to get a list of all reports with GET /reports
 - Be able to get a list of reports of type 'X' with GET /reports?type=X
