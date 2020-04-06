@@ -1,19 +1,19 @@
 # Stears Coding Homework
 
-Thanks for your application to Stears for the role: Senior Full Stack Developer.
+Thanks for your application to Stears for the role: Full Stack Developer.
 
 This interview is intended for an experienced Python Django & ReactJS developer.
 
-It should take you roughly 2 days to complete.
+It should take you roughly 4 days to complete.
 
 #### Submissions
 
-- Create a private [gitlab](https://gitlab.com/) repository and add foluso_ogunlana as a contributor
+- Create a private [gitlab](https://gitlab.com/) repository and add both @foluso_ogunlana and @josh_ie as maintainers
 - Create a README.md with clear set up instructions (assume no knowledge of the submission or the stack)
 
 #### Deadlines
 
-You will be given at least 4 days to complete the tasks below before a phone interview in most cases.
+You will be given at least 5 days to complete the tasks below before a follow up email to proceed with the rest of the application process.
 
 #### Assessment
 
@@ -43,6 +43,8 @@ Use Python Django & ReactJS. If you feel you'd rather use something else, please
 
 **Please complete Task 1 and Task 2. Task 3 is a bonus**
 
+You are free to put both tasks in the same repo, or in separate repos as you see fit.
+
 ### Task 1
 
 Django application to create posts. Below is an example post:
@@ -60,8 +62,8 @@ Django application to create posts. Below is an example post:
 }
 ```
 
-- Your application should be a REST api with 1 endpoint: `/posts`.
-- It should be deployable with `docker-compose up`
+- Your application should be a REST api with 1 endpoint: `/posts` allowing only `GET` (get specific or list) and `POST`
+- The API should be deployable with `docker-compose up`
 - It should have an integration test suite covering all endpoints
 - It should use a shared runner on GitLab to run the integration and unit tests
 
@@ -71,18 +73,19 @@ Django application to create posts. Below is an example post:
 - Be able to create a new post with POST /posts
 - Be able to get a specific post with GET /posts/<id>
 - Be able to search for posts with GET /posts?...
-- Create a script `seed.py` to load the API with fake posts through the endpoints. Use any fake data. e.g. [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+- Create a script `seed.py` to load the app with fake posts. Use any fake data. e.g. [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
 **Technical Acceptance Criteria**
 
-- No less than 90% test coverage on api endpoints
-- Provide a `.gitlab-ci.yml` to run the tests and build the container on the [pipeline](https://docs.gitlab.com/ee/ci/yaml/) using [shared runners](https://docs.gitlab.com/ee/ci/runners/)
-- Be able to run tests, migrations & the dev server, each with a simple command - hint: `pipenv run` using [Pipenv](https://pipenv.readthedocs.io/en/latest/)
+- Try to get close to 90% test coverage on all endpoints
+- Try to provide a `.gitlab-ci.yml` to run the tests and build the container on the [pipeline](https://docs.gitlab.com/ee/ci/yaml/) using [shared runners](https://docs.gitlab.com/ee/ci/runners/)
+- Prettify your code using [black](https://github.com/psf/black) or other
+- Use a virtual environment to install requirements - e.g. [Pipenv](https://pipenv.readthedocs.io/en/latest/), or `virtualenvwrapper`, etc.
 
 **Hints**
 
 - Use [Django REST Framework](https://www.django-rest-framework.org/)
-- Search GitLab's docs for example .gitlab-ci.yml configs
+- Search GitLab's docs for example `.gitlab-ci.yml` configs
 
 ### Task 2
 
@@ -101,30 +104,19 @@ As a user, I should be able to land on the home page of your application, enter 
 **Technical Acceptance Criteria**
 
 - Use 2 separate routes: / for home page and /search for search results
-- Achieve no less than 90% unit test coverage
-- Provide a `.gitlab-ci.yml` to run the tests and build the container on the [pipeline](https://docs.gitlab.com/ee/ci/yaml/) using [shared runners](https://docs.gitlab.com/ee/ci/runners/)
-- Be able to run tests, migrations & the dev server, each with a simple command - hint: `npm run ...`
+- Try to get close to 90% unit test coverage
+- Prettify your code using [prettier](https://prettier.io/) or other.
+- Try to provide a `.gitlab-ci.yml` to run the tests and build the container on the [pipeline](https://docs.gitlab.com/ee/ci/yaml/) using [shared runners](https://docs.gitlab.com/ee/ci/runners/)
+- Be able to run tests or dev server, each with a simple command - hint: `npm run ...`
 
 ![Example table](/../master/search.png?raw=true "Wireframes")
 
 **Note**
 
 - We expect that your code uses best practices in testing, linting, documentation and ReactJS & Django architecture
-- Serve both back end and frontend applications using `nginx` or other
+- Try to serve both back end and frontend applications using `nginx` or other
 - Containerize each application using docker so it can be run using `docker-compose up`
 - Write a `README.md` file on each repo explaining clearly how to set up **and deploy** the application in development (docker compose) to any environment (Digital Ocean, AWS, or any other server) so it can be seen over a regular browser and HTTP.
-
-### BONUS Task 3
-
-Any attempt at this task is welcome.
-
-1. Hook up an elastic search container and find a way to keep it in sync with your django database, so that every post is instantly indexed as it is created and re-indexed when modified.
-
-2. Expose the search endpoint of this container and all endpoints of the two others using an api-gateway pattern with any favourite tech, e.g. nginx.
-
-3. Use elastic search from the frontend instead of query the django application directly.
-
-4. Write a single E2E test that checks when an item is searched on the UI, results are returned.
 
 ## Thanks!
 
