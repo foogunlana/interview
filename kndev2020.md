@@ -2,19 +2,20 @@
 
 Thanks for your application to Stears
 
-This interview is intended for a developer with experience in MongoDB, ReactJS, Typescript, NodeJS & NestJS.
-So we expect that you use those tools to achieve the goal, or demonstrate a level of knowledge (or learning) of them.
+This interview is intended for a developer with knowledge / experience in some of the following: MongoDB, ReactJS, Typescript, NodeJS & NestJS.
+
+We expect that you use those tools to achieve the goal to demonstrate some level of knowledge (or learning) of them.
 
 We do not require that you complete this task, but that you attempt as much as you can so we will have enough information to assess your skill level.
 
 #### Submissions
 
-- Create a private [gitlab](https://gitlab.com/) repository and add foluso_ogunlana as a contributor
+- Create a private [gitlab](https://gitlab.com/) repository and add @foluso_ogunlana & @jaymykels69 as maintainers
 - Create a README.md with clear set up instructions (assume no knowledge of the submission or the stack)
 
 #### Deadlines
 
-You will be given 4 days to complete the tasks below before a video call interview.
+You will be given at least 5 days to complete the tasks below before a video call interview.
 
 #### Assessment
 
@@ -25,6 +26,7 @@ You will be assessed primarily on the following, **in this order**:
 3. **Expertise** - Demonstrate knowledge of good practices & architecture in the NodeJS, Typescript, NestJS, MongoDB and React ecosystems
 4. **Deployment** - Create code that can be shipped & iterated easily
 5. **Documentation** - Provide documentation to get others up to speed on your work
+6. **Readability** - Show that your code is not only functional, but easy to read
 
 Also we will give extra points for:
 
@@ -38,23 +40,25 @@ By submitting, you assure us that you have not shared the test with anyone else 
 
 **Please complete Task 1 and Task 2 (which work together). Task 3 is a bonus**
 
+You are free to put both tasks in the same repo or in different repos as you see fit.
+
 ## Task 1
 
 This is a purely backend task to assess your API building ability
 
 Build an API with the following interface:
 
-| Method |      Endpoint       |      Request Payload      |
-| :----: | :-----------------: | :-----------------------: |
-|  POST  |     /companies      | [company](./company.json) |
-|  GET   | /company/:companyId |             -             |
-|  POST  |      /reports       |  [report](./report.json)  |
-|  GET   |      /reports?      |             -             |
+| Method |       Endpoint        |      Request Payload      |           Response Payload            |
+| :----: | :-------------------: | :-----------------------: | :-----------------------------------: |
+|  POST  |      /companies       | [company](./company.json) |  `{ staticId: xxxx-xxxx-xxxx-xxxx }`  |
+|  GET   | /companies/:companyId |             -             |       [company](./company.json)       |
+|  POST  |       /reports        |  [report](./report.json)  |  `{ staticId: xxxx-xxxx-xxxx-xxxx }`  |
+|  GET   |       /reports?       |             -             | **Paginated** [report](./report.json) |
 
 GET /reports lets you filter reports by type, company or year.
 There is a **One To Many** relationship between the companies and reports, respectively.
 
-You get to decide what the response body to each call should be, and what kind of request validation is necessary. Also note that the JSON files provided are only examples. You can modify the structure as you see fit, but don't stray too far out.
+You get to decide what the pagination on reports should look like, and what kind of request validation is necessary for each endpoint if needed. Also note that the JSON files provided are only examples. You can modify the structure as you see fit, but don't stray too far out.
 
 1. Take a look at the example JSON files. **Are there any problems with the example JSON payloads?**
 2. If so, **correct your JSON files and use the corrected versions**
@@ -69,8 +73,8 @@ You get to decide what the response body to each call should be, and what kind o
 - Be able to get a list of reports of type 'X' with GET /reports?type=X
 - Be able to get a list of reports of company 'Y' with GET /reports?companyId=Y
 - Be able to see swagger Open API documentation of all the above
-- Be able to run with a single docker-compose up, and access the server on localhost:5000
-- Be able to run unit tests with npm run test
+- Be able to run with a single docker-compose up
+- Be able to run unit tests with npm run test (test as see fit. Use NestJS if you need, or just Jest if you want)
 - Be able to run integration tests with npm run test:integration
 
 ## Task 2
@@ -107,7 +111,7 @@ As a user I should be able to see company details and a list of reports. The bas
 - Be able to see the header of the table "Company X reports for 2020"
 - Be able to see a list of company reports (**Only for 2020**) in a table with columns: name, period, assignee, submitted
 - Be able to sort by columns: submitted
-- Be able to click a row to see the PDF report via URL (not yet implemented)
+- Be able to click a row to see the PDF report via URL (use a random link)
 
 ## [Bonus] Task 3
 
