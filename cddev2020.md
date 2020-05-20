@@ -35,9 +35,7 @@ By submitting, you assure us that you have not shared the test with anyone else 
 
 # **Coding Homework**
 
-**Single Task**
-
-## Task 1
+## Single Task
 
 This is a purely backend task to assess your programming architecture
 
