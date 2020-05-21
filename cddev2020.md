@@ -35,7 +35,7 @@ By submitting, you assure us that you have not shared the test with anyone else 
 
 # **Coding Homework**
 
-## Single Task
+## Task 1
 
 This is a purely backend task to assess your programming architecture
 
@@ -63,6 +63,20 @@ We are most interested in seeing how you deal with a non-blocking service trigge
 - Be able to receive a response as soon as a download job is created, without waiting for the download to complete
 - Be able to retry failed jobs a fixed number of times set by an environment variable
 - Be able to run unit or integration tests with npm run test
+
+## BONUS Task 2
+
+Create a GUI to show your downloads using ReactJS.
+
+![Stears Movie Downloader](/stears-movie-downloader.png?raw=true "Wireframes")
+
+Keep it simple, and use this as a chance to demonstrate your skills in modern ReactJS.
+
+**Acceptance Criteria**
+
+- Be able to see a list of current downloads with status (pending / in progress / done)
+- Be able to add a download to the queue by entering the download in the textbox and clicking "GO"
+- Be able to see the downloads change status without refreshing the page (max - 1 minute latency)
 
 ## Thanks!
 
