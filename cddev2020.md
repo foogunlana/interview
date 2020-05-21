@@ -4,7 +4,7 @@ Thanks for your application to Stears
 
 This interview is intended for a developer with knowledge / experience in some of the following: Database modelling, System design & architecture, NodeJS & Typescript.
 
-We expect that you use those tools to achieve the goal to demonstrate some level of knowledge (or learning) of them.
+We expect that you **use those tools** to achieve the goal to demonstrate some level of knowledge (or learning) of them.
 
 We encourage that you complete the test requirements for us to correctly guage your current skill level.
 
@@ -23,7 +23,7 @@ You will be assessed primarily on the following, **in this order**:
 
 1. **Problem solving** - Meet the requirements. Produce a system that solves the problem in the best way you know
 2. **Architecture** - Create a simple, fault tolerant, easy to maintain, modern system with that is flexible to change for likely future requirements
-3. **Quality** - Demonstrate your solution's correctness with unit tests, a clear README.md or other documentation. Also, make it easy to deploy with docker-compose or other methods
+3. **Quality** - Demonstrate your solution's correctness with enough unit tests, a clear README.md or other documentation. Also, make it easy to deploy with docker-compose or other methods
 
 Also we will give extra points for:
 
@@ -61,7 +61,7 @@ We are most interested in seeing how you deal with a non-blocking service trigge
 - Be able to create a new download with POST /downloads
 - Be able to get all downloads and their correct statuses with GET /downloads
 - Be able to receive a response as soon as a download job is created, without waiting for the download to complete
-- Be able to retry failed jobs a fixed number of times set by an environment variable
+- Be able to handle failed downloads by retrying the download where appropriate
 - Be able to run unit or integration tests with npm run test
 
 Here's a [test URL](https://stears-interview-data.s3-eu-west-1.amazonaws.com/logo.png) you can use if you can't find anything to download
