@@ -66,7 +66,7 @@ We are most interested in seeing how you deal with a non-blocking service trigge
 
 Here's a [test URL](https://stears-interview-data.s3-eu-west-1.amazonaws.com/logo.png) you can use if you can't find anything to download
 
-## BONUS Task 2
+## Task 2
 
 Create a GUI to show your downloads using ReactJS.
 
