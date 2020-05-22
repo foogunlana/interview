@@ -22,7 +22,7 @@ You will be given at least 5 days to complete the tasks below before a video cal
 You will be assessed primarily on the following, **in this order**:
 
 1. **Problem solving** - Meet the requirements. Produce a system that solves the problem in the best way you know
-2. **Architecture** - Create a simple, fault tolerant, easy to maintain, modern system with that is flexible to change for likely future requirements
+2. **Architecture** - Create a simple, fault tolerant, easy to maintain, modern system that is flexible to change for likely future requirements
 3. **Quality** - Demonstrate your solution's correctness with enough unit tests, a clear README.md or other documentation. Also, make it easy to deploy with docker-compose or other methods
 
 Also we will give extra points for:
