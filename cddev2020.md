@@ -23,7 +23,7 @@ You will be assessed primarily on the following, **in this order**:
 
 1. **Problem solving** - Meet the requirements. Produce a system that solves the problem in the best way you know
 2. **Architecture** - Create a simple, fault tolerant, easy to maintain, modern system that is flexible to change for likely future requirements
-3. **Quality** - Demonstrate your solution's correctness with enough unit tests, a clear README.md or other documentation. Also, make it easy to deploy with docker-compose or other methods
+3. **Quality** - Demonstrate your solution's correctness with enough unit tests, a clear README.md or other documentation, and make it easy to deploy with docker-compose or another method
 
 Also we will give extra points for:
 
@@ -41,7 +41,7 @@ This is a purely backend task to assess your programming architecture
 
 Build an API with the following interface:
 
-| Method |  Endpoint  |            Request Payload            |          Response Payload           |
+| Method |  Endpoint  |        Example Request Payload        |      Example Response Payload       |
 | :----: | :--------: | :-----------------------------------: | :---------------------------------: |
 |  POST  | /downloads | http://www.example.com/free-movie.mp4 | `{ staticId: xxxx-xxxx-xxxx-xxxx }` |
 |  GET   | /downloads |                                       |  [example-downloads](./links.json)  |
@@ -77,9 +77,9 @@ Keep it simple, and use this as a chance to demonstrate your skills in modern Re
 **Acceptance Criteria**
 
 - Be able to see a list of current downloads with status (pending / in progress / done)
-- Be able to see, on each download, the URL and the timestamp of the last status update
-- Be able to add a download to the queue by entering the download in the textbox and clicking "GO"
-- Be able to see the downloads change status without refreshing the page (max - 1 minute latency)
+- Be able to see on each download, the URL of the download and the timestamp of its last status update
+- Be able to add a download to the queue by entering the download link in the textbox and clicking "GO"
+- Be able to see the downloads change their status without refreshing the page (max - 1 minute latency)
 
 ## Thanks!
 
